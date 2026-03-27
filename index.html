@@ -1,11 +1,88 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Test</title>
-</head>
-<body>
-    <h1>Test</h1>
-</body>
+  </head>
+  <body>
+    <header>
+      <h1>Test</h1>
+      <!-- Menú de navegación principal del sitio -->
+      <nav>
+        <a href="#inicio">Inicio</a>
+        <a href="#tarjetas">Tarjetas</a>
+        <a href="#galeria">Galería</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+    </header>
+
+    <!-- Contenido principal de la página -->
+    <main>
+      <!-- Sección de bienvenida o presentación -->
+      <section id="inicio">
+        <h2>¡Bienvenidos al mundo del desarrollo web!</h2>
+        <p>
+          En esta página aprenderemos HTML y CSS trabajando en
+          <strong>ramas separadas de Git</strong>. Primero la estructura, luego
+          los estilos.
+        </p>
+      </section>
+
+      <!-- Sección de tarjetas de contenido -->
+      <section id="tarjetas">
+        <h2>Tecnologías que aprenderemos</h2>
+
+        <!-- Contenedor de tarjetas; en CSS se puede aplicar Flexbox -->
+        <div class="contenedor-tarjetas">
+          <!-- Tarjeta sobre HTML -->
+          <div class="tarjeta">
+            <h3>🏗️ HTML</h3>
+            <p>
+              Es el esqueleto de toda página web. Define la estructura y el
+              contenido.
+            </p>
+          </div>
+
+          <!-- Tarjeta sobre CSS -->
+          <div class="tarjeta">
+            <h3>🎨 CSS</h3>
+            <p>
+              Le da color, forma y estilo a la estructura HTML. ¡Aquí usaremos
+              Flexbox!
+            </p>
+          </div>
+
+          <!-- Tarjeta sobre JavaScript -->
+          <div class="tarjeta">
+            <h3>⚙️ JavaScript</h3>
+            <p>Agrega interactividad y lógica dinámica a nuestra página.</p>
+          </div>
+        </div>
+
+        <!-- Fin del contenedor de tarjetas -->
+      </section>
+
+      <!-- Sección de galería de imágenes -->
+      <section id="galeria">
+        <h2>Galería</h2>
+
+        <!-- Contenedor de imágenes; en CSS se puede usar Flexbox con wrap -->
+        <div class="contenedor-galeria">
+          <img src="https://picsum.photos/seed/html/300/200" alt="Imagen 1" />
+          <img src="https://picsum.photos/seed/css/300/200" alt="Imagen 2" />
+          <img src="https://picsum.photos/seed/js/300/200" alt="Imagen 3" />
+          <img src="https://picsum.photos/seed/git/300/200" alt="Imagen 4" />
+          <img src="https://picsum.photos/seed/web/300/200" alt="Imagen 5" />
+          <img src="https://picsum.photos/seed/dev/300/200" alt="Imagen 6" />
+        </div>
+      </section>
+    </main>
+
+    <!-- Pie de página con información de contacto -->
+    <footer id="contacto">
+      <p>Contacto: <a href="mailto:info@mipagina.com">info@mipagina.com</a></p>
+      <p>© 2026 Mi Primera Página Web</p>
+    </footer>
+  </body>
 </html>
