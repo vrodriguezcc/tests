@@ -1,0 +1,68 @@
+/* Hoja de estilos principal de la página */
+
+body {
+  font-family: Arial, sans-serif; /* Define el tipo de letra que usará toda la página */
+  background-color: #f4f6f8; /* Establece el color de fondo de la página */
+  color: #333; /* Define el color del texto */
+  margin: 0; /* Elimina el espacio exterior por defecto del navegador */
+  padding: 0; /* Elimina el espacio interior por defecto */
+}
+
+header {
+  background-color: #2c3e50; /* Color de fondo del encabezado */
+  color: white; /* Color del texto dentro del encabezado */
+  padding: 1rem 2rem; /* Espacio interior: 1rem arriba/abajo y 2rem izquierda/derecha */
+}
+
+main {
+  padding: 2rem; /* Agrega espacio interior alrededor del contenido principal */
+}
+
+section {
+  margin-bottom: 2rem; /* Agrega un espacio debajo de cada sección */
+}
+
+footer {
+  background-color: #2c3e50; /* Color de fondo del pie de página */
+  color: white; /* Color del texto del pie de página */
+  text-align: center; /* Centra el texto horizontalmente */
+  padding: 1rem; /* Agrega espacio interior en todos los lados */
+}
+
+nav {
+  display: flex; /* Activa Flexbox y coloca los elementos hijos en fila */
+  gap: 1rem; /* Agrega espacio entre los enlaces del menú */
+}
+
+nav a {
+  color: white; /* Cambia el color del texto de los enlaces */
+  text-decoration: none; /* Quita el subrayado de los enlaces */
+}
+
+.contenedor-tarjetas {
+  display: flex; /* Activa Flexbox para organizar las tarjetas */
+  flex-wrap: wrap; /* Permite que las tarjetas bajen a otra línea si no caben */
+  gap: 1rem; /* Agrega espacio entre las tarjetas */
+}
+
+.tarjeta {
+  background-color: white; /* Color de fondo de cada tarjeta */
+  border: 1px solid #ddd; /* Agrega un borde de 1 píxel, sólido y color gris claro */
+  border-radius: 8px; /* Redondea las esquinas de la tarjeta */
+  padding: 1rem; /* Agrega espacio interior dentro de la tarjeta */
+  flex: 1 1 200px; /* Permite que la tarjeta crezca, se reduzca y tenga un ancho base de 200px */
+}
+
+.contenedor-galeria {
+  display: flex; /* Activa Flexbox para organizar las imágenes */
+  flex-wrap: wrap; /* Permite que las imágenes bajen a otra línea si no caben */
+  justify-content: center; /* Centra las imágenes horizontalmente */
+  gap: 1rem; /* Agrega espacio entre las imágenes */
+}
+
+.contenedor-galeria img {
+  width: 250px; /* Define el ancho de cada imagen */
+  height: 170px; /* Define la altura de cada imagen */
+  object-fit: cover; /* Hace que la imagen se recorte para llenar el espacio sin deformarse */
+  border-radius: 6px; /* Redondea las esquinas de las imágenes */
+}
